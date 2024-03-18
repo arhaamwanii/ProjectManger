@@ -1,10 +1,11 @@
 import React from 'react'
 
-export const Sidebar = ({formData , switchPage , sendPrev}) => {
+export const Sidebar = ({formData , switchPage , sendPrev , sendIndex}) => {
 
-    function handleProjectClick(prev){
+    function handleProjectClick(prev , index){
         switchPage(false)
         sendPrev(prev)
+        sendIndex(index)
     }
     
     //function to send the data about which button was clicked to the TASK component
@@ -13,7 +14,7 @@ export const Sidebar = ({formData , switchPage , sendPrev}) => {
     <div>
         <h2>YOUR PROJECTS</h2>
         {formData.map((prev , index) => <li key={index}> 
-            <button onClick={() => handleProjectClick(prev)}>
+            <button key={index} onClick={() => handleProjectClick(prev , index)}>
                 {prev.Title}
             </button>
         </li>)}

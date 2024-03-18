@@ -12,7 +12,7 @@ export const Input = ({formData , setFormData}) => {
             Description : descriptionRef.current.value,
             Date: dateRef.current.value,
             Tasks: [
-                "" , ""
+                ""
             ]
         }
         setFormData([...formData, newInstance]);

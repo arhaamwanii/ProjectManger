@@ -15,14 +15,16 @@ function App() {
   ])
   const [pageChoose , setPageChoose] = useState(true)
   const [sendPrev , setSendPrev ] = useState()
+  const [sendIndex , setSendIndex] = useState()
+
 
   return (
     <>
       <div >
-        <Sidebar sendPrev={setSendPrev} switchPage={setPageChoose} formData={formData}/>
+        <Sidebar sendPrev={setSendPrev} sendIndex={setSendIndex} switchPage={setPageChoose} formData={formData}/>
         <br />
         <br />
-        {pageChoose ? <Input formData={formData} setFormData={setFormData} /> : <Task title={sendPrev.Title} date={sendPrev.Date} description={sendPrev.Description}  tasks={sendPrev.Tasks} setFormData={setFormData} />}
+        {pageChoose ? <Input formData={formData} setFormData={setFormData} /> : <Task title={sendPrev.Title} date={sendPrev.Date} description={sendPrev.Description}  tasks={sendPrev.Tasks} setFormData={setFormData} index={sendIndex} formData={formData} />}
       </div>
     </>
   );

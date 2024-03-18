@@ -36,10 +36,18 @@ Building Steps
     - object recieved  in the task - put data from the input field in this array and at the same time show it
         - create an input field recieve the data from the input field 
         - push it into the empty task property in the form data array 
+            - how do you push it into the array
+                - in the side bar get an index i.e which button has been clicked 
+                - get that index to the side bar 
+                - get the change form data to the side bar
+                - with the help of the index update the formData where you need to 
         - map this array and show it to the user
-    - but an button next to every map
-    - make this button go away the value inside of the that had been cliked by it
+        - it FUCKING WORKED
+    - but a delete button inside of the object map i.e be able
+    - make this button go away the value inside of the that had been cliked by i
 
-    
+
+
+
 
 
