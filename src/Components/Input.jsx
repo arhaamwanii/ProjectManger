@@ -1,14 +1,6 @@
 import React, { useRef, useState } from 'react'
 
-export const Input = () => {
-    const [formData , setFormData] = useState([
-        // Title : "",
-        // Description: "",
-        // Date: "",
-        // Tasks: [
-        //     "Task 1" , "Task 2" , "...."
-        // ]
-    ])
+export const Input = ({formData , setFormData}) => {
 
     const titleRef = useRef()
     const descriptionRef = useRef()
@@ -30,7 +22,8 @@ export const Input = () => {
         dateRef.current.value = ""
     }
  console.log(formData)
- 
+
+
     return (
     <div>
         <div>

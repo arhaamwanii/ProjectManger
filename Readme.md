@@ -22,5 +22,9 @@ Building Steps
             -date
             -array for the tasks
     - show the title of these objects on one side of the screem
-    - all the info recived is stored in a array/obeject 
-    - we show that array/ obeject to the user the left side of the screen
+    
+    - once we click on one of these buttons the
+        -project entering thing should disappear
+        - task entering thing should appear
+        - it should have the data for which data it has to show
+        - send the data with the which button was clicked to the tasks
