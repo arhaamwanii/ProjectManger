@@ -22,7 +22,7 @@ function App() {
         <Sidebar sendPrev={setSendPrev} switchPage={setPageChoose} formData={formData}/>
         <br />
         <br />
-        {pageChoose ? <Input formData={formData} setFormData={setFormData} /> : <Task title={sendPrev.Title} date={sendPrev.Date} description={sendPrev.Description}  tasks={sendPrev.Tasks}/>}
+        {pageChoose ? <Input formData={formData} setFormData={setFormData} /> : <Task title={sendPrev.Title} date={sendPrev.Date} description={sendPrev.Description}  tasks={sendPrev.Tasks} setFormData={setFormData} />}
       </div>
     </>
   );

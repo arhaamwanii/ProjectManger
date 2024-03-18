@@ -23,8 +23,23 @@ Building Steps
             -array for the tasks
     - show the title of these objects on one side of the screem
     
-    - once we click on one of these buttons the
-        -project entering thing should disappear
+    - once we click on one of these buttons the  (array that show the   projects )
+        - project entering thing should disappear
         - task entering thing should appear
-        - it should have the data for which data it has to show
-        - send the data with the which button was clicked to the tasks
+        - send the data with the which button was clicked to the tasks from sidebar(get data from side bar to task which object data to show)
+        - display the data recieved in 
+            - title
+            - date
+            - description
+            - {section for TASKS}
+
+    - object recieved  in the task - put data from the input field in this array and at the same time show it
+        - create an input field recieve the data from the input field 
+        - push it into the empty task property in the form data array 
+        - map this array and show it to the user
+    - but an button next to every map
+    - make this button go away the value inside of the that had been cliked by it
+
+    
+
+
