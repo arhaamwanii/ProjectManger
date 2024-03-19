@@ -43,8 +43,7 @@ Building Steps
                 - with the help of the index update the formData where you need to 
         - map this array and show it to the user
         - it FUCKING WORKED
-    - but a delete button inside of the object map i.e be able
-    - make this button go away the value inside of the that had been cliked by i
+    - get a delete button to delete that particuar object in the the formData
 
 
 

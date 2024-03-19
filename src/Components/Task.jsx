@@ -28,9 +28,10 @@ export const Task = ({ title, date, description, tasks, setFormData, index, form
   console.log(formData);
 
   // FUNCTION TO DELETE THE OBJECT
-  // function deleteObj(){
-  //   formData.splice(index , 1)
-  // }
+  function deleteObj(){
+    formData.splice(index , 1)
+    console.log(formData)
+  }
 
   return (
     <div>
@@ -39,10 +40,8 @@ export const Task = ({ title, date, description, tasks, setFormData, index, form
       <p>Description: {description}</p>
       <hr />
       <h2>Tasks</h2>
-      {/* BUTTON TO DELETE THE OBJ */}
-    {/* <button onClick={deleteObj}>
-      DELETE PROJECT
-    </button> */}
+    
+    <button onClick={deleteObj}>Delte Project</button>
 
       <div>
         <input onChange={handleInput} type="text" ref={taskInput} />
@@ -61,6 +60,7 @@ export const Task = ({ title, date, description, tasks, setFormData, index, form
         //   ))
         //   }
         // </li>
+
       ))}
     </div>
   );
